@@ -40,7 +40,7 @@ task(:generate_team_table) do
     github_profile_url = "https://github.com/#{github_user}"
 
     content << "<tr>" if counter % number_of_rows == 0
-    content << "<td id='#{github_user_id}'>"
+    content << "<td id='#{github_user}'>"
     content << "<a href='#{github_profile_url}'>"
     content << "<img src='#{github_profile_url}.png?size=140'>"
     content << "</a>"
